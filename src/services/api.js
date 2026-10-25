@@ -1,6 +1,5 @@
-const API_KEY = "6fcf2a604aa741901ecec90c8e00a300";
 const BASE_URL = "https://api.themoviedb.org/3/";
-
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 export const getPopularMovies = async () =>{
     const response = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}`);
